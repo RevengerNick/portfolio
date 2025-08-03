@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #38bdf8;   /* Яркий голубой для акцентов */
+  --color-secondary: #818cf8; /* Фиолетовый для градиентов */
+  --color-bg-dark: #111827;   /* Очень темный фон */
+  --color-bg-light: #1f2937;  /* Чуть светлее для карточек */
+  --color-text-main: #e5e7eb; /* Основной светлый текст */
+  --color-text-muted: #9ca3af;/* Приглушенный текст */
+}
+
+/* Плавная прокрутка при нажатии на якорные ссылки */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,12 @@
+services:
+  portfolio-frontend:
+    container_name: portfolio_frontend
+    build:
+      context: ./portfolio/ # Укажите правильный путь к вашему портфолио
+    restart: always
+    networks:
+      - vs_code_default
+      
+networks:
+  vs_code_default:
+    external: true
