@@ -1,15 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #38bdf8;   /* Яркий голубой для акцентов */
-  --color-secondary: #818cf8; /* Фиолетовый для градиентов */
-  --color-bg-dark: #111827;   /* Очень темный фон */
-  --color-bg-light: #1f2937;  /* Чуть светлее для карточек */
-  --color-text-main: #e5e7eb; /* Основной светлый текст */
-  --color-text-muted: #9ca3af;/* Приглушенный текст */
+  /* ... ваши существующие переменные ... */
+  --color-primary: #38bdf8;
+  --color-secondary: #818cf8;
+  --color-bg-dark: #111827;
+  --color-bg-light: #1f2937;
+  --color-text-main: #e5e7eb;
+  --color-text-muted: #9ca3af;
+
+  /* ДОБАВЛЯЕМ ПЕРЕМЕННЫЕ ДЛЯ SWIPER */
+  --swiper-theme-color: theme(colors.blue.500); /* Цвет активной пагинации и навигации */
+  --swiper-navigation-color: theme(colors.white); /* Цвет стрелок */
+  --swiper-pagination-bullet-inactive-color: theme(colors.gray.400);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-navigation-size: 22px; /* Уменьшаем размер стрелок */
 }
 
-/* Плавная прокрутка при нажатии на якорные ссылки */
 html {
   scroll-behavior: smooth;
 }
