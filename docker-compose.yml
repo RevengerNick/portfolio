@@ -2,7 +2,7 @@ services:
   portfolio-frontend:
     container_name: portfolio_frontend
     build:
-      context: ./portfolio/ # Укажите правильный путь к вашему портфолио
+      context: ./portfolio/ 
     restart: always
     networks:
       - vs_code_default
