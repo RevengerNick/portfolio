@@ -3,6 +3,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 // Переводим на русский и используем объекты для гибкости
 const navLinks = [
+    { href: "/portfolio.pdf", title: "Портфолио" },
     { href: "#home", title: "Главная" },
     { href: "#projects", title: "Проекты" },
     { href: "#skills", title: "Навыки" },
