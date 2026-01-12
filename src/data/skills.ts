@@ -2,7 +2,6 @@ import {
   FaReact,
   FaNodeJs,
   FaDocker,
-  FaGitAlt,
   FaPython,
   FaLinux,
   FaRaspberryPi,
@@ -11,7 +10,6 @@ import {
 import {
   SiTypescript,
   SiPostgresql,
-  SiGraphql,
   SiNestjs,
   SiNextdotjs,
   SiRedux,
