@@ -1,24 +1,38 @@
 @import "tailwindcss";
 @import "swiper/css";
-
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 @theme {
-  /* ... ваши существующие переменные ... */
-  --color-primary: #38bdf8;
-  --color-secondary: #818cf8;
-  --color-bg-dark: #111827;
-  --color-bg-light: #1f2937;
-  --color-text-main: #e5e7eb;
-  --color-text-muted: #9ca3af;
+  --color-primary: #38bdf8; /* Sky 400 */
+  --color-secondary: #818cf8; /* Indigo 400 */
+  --color-bg-dark: #0f172a; /* Slate 900 - чуть более глубокий синий чем gray */
+  --color-bg-light: #1e293b; /* Slate 800 */
+  --color-text-main: #f8fafc; /* Slate 50 */
+  --color-text-muted: #94a3b8; /* Slate 400 */
 
-  /* ДОБАВЛЯЕМ ПЕРЕМЕННЫЕ ДЛЯ SWIPER */
-  --swiper-theme-color: theme(colors.blue.500); /* Цвет активной пагинации и навигации */
-  --swiper-navigation-color: theme(colors.white); /* Цвет стрелок */
-  --swiper-pagination-bullet-inactive-color: theme(colors.gray.400);
-  --swiper-pagination-bullet-inactive-opacity: 1;
-  --swiper-navigation-size: 22px; /* Уменьшаем размер стрелок */
+  --swiper-theme-color: #38bdf8;
+  --swiper-navigation-color: #f8fafc;
+  --swiper-pagination-bullet-inactive-color: #475569;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-navigation-size: 24px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased overflow-x-hidden;
+}
+
+/* Custom Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply transition-all duration-300 scale-50 hover:scale-100;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-6 rounded-full transition-all duration-300;
 }
