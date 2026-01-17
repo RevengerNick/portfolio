@@ -5,8 +5,8 @@ services:
       context: . 
     restart: always
     networks:
-      - vs_code_default
+      - cloud-network
       
 networks:
-  vs_code_default:
+  cloud-network:
     external: true
